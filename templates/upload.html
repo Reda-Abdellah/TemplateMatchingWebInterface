@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title>Upload</title>
+</head>
+<body>
+
+<img src="red.jpg" alt="redmint">
+<br>
+<form method=POST enctype=multipart/form-data action="{{ url_for('upload') }}">
+Photos:   <input type=file name=photos multiple> <br>
+Templates:    <input type=file name=templates multiple><br>
+    <input type="submit">
+</form>
+</body>
+</html>
